@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorPrimary">@color/meatlicSeaWeed</color>
+    <color name="colorPrimaryDark">@color/meatlicSeaWeed</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="meatlicSeaWeed">#087E8B</color>
+    <color name="sizzlingRed">#FF5A5F</color>
+    <color name="royalWhite">#FFFFFF</color>
+    <color name="batmanBlack">#000000</color>
 </resources>

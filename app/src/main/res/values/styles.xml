@@ -3,8 +3,90 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/meatlicSeaWeed</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TextTheme" parent="android:Widget.TextView">
+        <item name="fontFamily">Montserrat</item>
+        <item name="android:textColor">@color/sizzlingRed</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:shadowColor">@android:color/white</item>
+        <item name="android:shadowDx">5</item>
+        <item name="android:shadowDy">5</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="ButtonTheme" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/sizzlingRed</item>
+        <item name="android:textColor">@color/meatlicSeaWeed</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textAppearance">@style/TextTheme</item>
+    </style>
+
+    <style name="NextButtonTheme" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/royalWhite</item>
+        <item name="android:textColor">@color/batmanBlack</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textAppearance">@style/TextTheme</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="EditTextTheme" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button_form</item>
+        <item name="android:textAppearance">@style/TextTheme</item>
+        <item name="android:textColor">@color/meatlicSeaWeed</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">20dp</item>
+    </style>
+
+    <style name="AlertDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:textColor">@color/meatlicSeaWeed</item>
+        <item name="android:textColorPrimary">@color/meatlicSeaWeed</item>
+    </style>
+
+    <style name="AlertPositiveButton" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button_form</item>
+        <item name="android:textAppearance">@style/TextTheme</item>
+        <item name="android:textColor">@color/meatlicSeaWeed</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">100dp</item>
+    </style>
+
+    <style name="AlertNegativeButton" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button_form</item>
+        <item name="android:textAppearance">@style/TextTheme</item>
+        <item name="android:textColor">@color/meatlicSeaWeed</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">100dp</item>
+    </style>
+
+    <style name="Buttons2StylePos" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button_form</item>
+        <item name="android:textAppearance">@style/TextTheme</item>
+        <item name="android:textColor">@color/meatlicSeaWeed</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">40dp</item>
     </style>
 
 </resources>

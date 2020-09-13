@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AlertDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:textColor">@color/meatlicSeaWeed</item>
+        <item name="android:textColorPrimary">@color/meatlicSeaWeed</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/AlertPositiveButton</item>
+    </style>
+
+    <style name="AlertDialogStyle2" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:textColor">@color/meatlicSeaWeed</item>
+        <item name="android:textColorPrimary">@color/meatlicSeaWeed</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/Buttons2StylePos</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/Buttons2StylePos</item>
+    </style>
+</resources>
