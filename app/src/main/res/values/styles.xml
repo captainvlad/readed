@@ -80,13 +80,15 @@
 
     <style name="Buttons2StylePos" parent="Widget.AppCompat.Button">
         <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
         <item name="android:background">@drawable/button_form</item>
         <item name="android:textAppearance">@style/TextTheme</item>
         <item name="android:textColor">@color/meatlicSeaWeed</item>
         <item name="android:textSize">20sp</item>
         <item name="android:gravity">center</item>
-        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_alignParentRight">true</item>
     </style>
 
 </resources>
