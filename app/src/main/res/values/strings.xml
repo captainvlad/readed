@@ -27,4 +27,6 @@
     <string name="skip">Skip</string>
     <string name="unskip">Don\'t skip</string>
     <string name="password_confirmation">Confirm password</string>
+    <string name="nameSurname">nameSurnamePreferences</string>
+    <string name="passwords_not_equal">Passwords are not equal!</string>
 </resources>

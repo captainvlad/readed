@@ -83,6 +83,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <Button
+            android:onClick="continueListener"
             android:id="@+id/button2"
             style="@style/NextButtonTheme"
             android:layout_marginTop="40dp"
