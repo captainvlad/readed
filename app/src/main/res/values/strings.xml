@@ -29,4 +29,7 @@
     <string name="password_confirmation">Confirm password</string>
     <string name="nameSurname">nameSurnamePreferences</string>
     <string name="passwords_not_equal">Passwords are not equal!</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
 </resources>

@@ -50,4 +50,8 @@ public class SupportClass {
         messageForDialog = message;
         emptyValueCaution(activity);
     }
+
+    public void writeIntoSharedPrefernces(Activity activity){
+
+    }
 }

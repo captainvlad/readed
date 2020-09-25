@@ -3,6 +3,7 @@ package com.example.readed;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
@@ -21,6 +22,14 @@ public class SignUpActivity extends AppCompatActivity {
         SupportClass.newInstance().prepareScreen(this);
     }
 
+    private void saveValuesIntoSharedPreferences(String name, String password){
+        SharedPreferences sharedPref = getSharedPreferences(getString(R.string.nameSurname), MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putString(getString(R.string.nameKey), name);
+        editor.putString(getString(R.string.passwordKey), password);
+        editor.commit();
+    }
+
     private void checkInputValues(){
         EditText name = findViewById(R.id.textView2);
         EditText password = findViewById(R.id.textView3);
@@ -31,7 +40,9 @@ public class SignUpActivity extends AppCompatActivity {
         String passwordConfirmationValue = passwordConfiramtion.getText().toString();
 
         if (!nameValue.isEmpty() && !passwordValue.isEmpty() && passwordValue.equals(passwordConfirmationValue) ){
-//            Start new Activity! or Save into Shared preferences!
+            saveValuesIntoSharedPreferences(nameValue, passwordValue);
+            Intent intent = new Intent(this, MenuActivity.class);
+            startActivity(intent);
             return;
         } if (!nameValue.isEmpty() && !passwordValue.isEmpty() && !passwordConfirmationValue.equals(passwordValue) ){
             SupportClass.newInstance().emptyValueCaution(this, R.string.passwords_not_equal);
@@ -43,9 +54,5 @@ public class SignUpActivity extends AppCompatActivity {
 
     public void continueListener(View v){
         checkInputValues();
-
-//        SharedPreferences sharedPref = getSharedPreferences(getString(R.string.nameSurname), MODE_PRIVATE);
-//        String name = sharedPref.getString(getString(R.string.nameKey), null);
-//        String password = sharedPref.getString(getString(R.string.passwordKey), null);
     }
 }
